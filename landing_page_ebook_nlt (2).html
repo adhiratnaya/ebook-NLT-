@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seri Ebook NLT Gratis — Kode NLT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --deep: #0D1117;
+    --teal: #0E7C7B;
+    --teal-light: #D4F1EE;
+    --teal-glow: rgba(14,124,123,0.15);
+    --gold: #C8921A;
+    --gold-light: #FEF3DC;
+    --purple: #4A3F8A;
+    --purple-light: #EEEBf8;
+    --indigo: #2B4590;
+    --white: #FFFFFF;
+    --off-white: #F7F6F3;
+    --text: #1C1C22;
+    --muted: #5E6272;
+    --border: rgba(0,0,0,0.08);
+    --ff-display: 'Playfair Display', Georgia, serif;
+    --ff-body: 'DM Sans', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--ff-body);
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 clamp(1.5rem, 5vw, 4rem);
+    height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .nav-brand {
+    font-family: var(--ff-display);
+    font-size: 1.15rem; font-weight: 700;
+    color: var(--teal); letter-spacing: -0.02em;
+  }
+  .nav-cta {
+    background: var(--teal); color: white;
+    padding: 0.5rem 1.25rem; border-radius: 6px;
+    font-size: 0.875rem; font-weight: 600;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .nav-cta:hover { background: #0B6665; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: var(--deep);
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    padding: 7rem clamp(1.5rem, 5vw, 4rem) 5rem;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 50%, rgba(14,124,123,0.18) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 15% 80%, rgba(74,63,138,0.2) 0%, transparent 65%);
+  }
+  .hero-grid {
+    position: relative; z-index: 1;
+    max-width: 1100px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(14,124,123,0.2); border: 1px solid rgba(14,124,123,0.4);
+    color: #5CE8E3; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em;
+    padding: 0.35rem 0.9rem; border-radius: 100px;
+    text-transform: uppercase; margin-bottom: 1.5rem;
+  }
+  .hero-badge span { width: 6px; height: 6px; background: #5CE8E3; border-radius: 50%; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
+
+  .hero-title {
+    font-family: var(--ff-display);
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 900; line-height: 1.1; letter-spacing: -0.03em;
+    color: white; margin-bottom: 1.25rem;
+  }
+  .hero-title .accent { color: #5CE8E3; font-style: italic; }
+
+  .hero-sub {
+    font-size: 1.1rem; line-height: 1.7; color: rgba(255,255,255,0.65);
+    margin-bottom: 2rem; font-weight: 300;
+  }
+  .hero-cta-wrap { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--teal); color: white;
+    padding: 0.9rem 2rem; border-radius: 8px;
+    font-size: 1rem; font-weight: 600;
+    text-decoration: none; transition: all 0.2s;
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .btn-primary:hover { background: #0B6665; transform: translateY(-2px); }
+  .btn-secondary {
+    color: rgba(255,255,255,0.7); font-size: 0.9rem;
+    text-decoration: none; display: flex; align-items: center; gap: 0.4rem;
+  }
+  .btn-secondary:hover { color: white; }
+
+  .hero-stat-row {
+    display: flex; gap: 2rem; margin-top: 3rem; padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .hero-stat { }
+  .hero-stat strong { display: block; font-size: 1.5rem; font-weight: 700; color: white; }
+  .hero-stat span { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+
+  /* hero visual */
+  .hero-visual {
+    display: flex; flex-direction: column; gap: 0.75rem;
+    position: relative;
+  }
+  .ebook-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px; padding: 1.1rem 1.4rem;
+    display: flex; align-items: center; gap: 1rem;
+    transition: all 0.3s; cursor: default;
+    backdrop-filter: blur(4px);
+  }
+  .ebook-card:hover {
+    background: rgba(255,255,255,0.09);
+    border-color: rgba(255,255,255,0.2);
+    transform: translateX(-4px);
+  }
+  .ebook-num {
+    width: 40px; height: 40px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--ff-display); font-weight: 900; font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .num-1 { background: rgba(14,124,123,0.3); color: #5CE8E3; }
+  .num-2 { background: rgba(200,146,26,0.3); color: #F0C060; }
+  .num-3 { background: rgba(43,69,144,0.3); color: #90AAFF; }
+  .num-4 { background: rgba(74,63,138,0.3); color: #C0B4FF; }
+  .ebook-info { flex: 1; min-width: 0; }
+  .ebook-info strong {
+    display: block; font-size: 0.85rem; font-weight: 600;
+    color: white; margin-bottom: 0.2rem; line-height: 1.3;
+  }
+  .ebook-info span { font-size: 0.75rem; color: rgba(255,255,255,0.45); }
+  .ebook-free {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em;
+    background: rgba(14,124,123,0.3); color: #5CE8E3;
+    padding: 0.2rem 0.5rem; border-radius: 4px; text-transform: uppercase;
+    flex-shrink: 0;
+  }
+
+  /* ── SECTION SHARED ── */
+  section { padding: 6rem clamp(1.5rem, 5vw, 4rem); }
+  .container { max-width: 1100px; margin: 0 auto; width: 100%; }
+  .section-label {
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--teal); margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: var(--ff-display);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700; line-height: 1.2; letter-spacing: -0.02em;
+    color: var(--text); margin-bottom: 1rem;
+  }
+  .section-sub {
+    font-size: 1.05rem; color: var(--muted); line-height: 1.7;
+    max-width: 560px; font-weight: 300;
+  }
+
+  /* ── SOCIAL PROOF ── */
+  .social-proof {
+    background: var(--off-white);
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .proof-inner {
+    display: flex; gap: 3rem; align-items: center; flex-wrap: wrap;
+    justify-content: center;
+  }
+  .proof-stat { text-align: center; }
+  .proof-stat .num {
+    font-family: var(--ff-display); font-size: 2.5rem; font-weight: 900;
+    color: var(--teal); line-height: 1;
+  }
+  .proof-stat .label { font-size: 0.85rem; color: var(--muted); margin-top: 0.25rem; }
+  .proof-divider { width: 1px; height: 50px; background: var(--border); }
+  .proof-logos {
+    display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
+    color: var(--muted); font-size: 0.8rem;
+  }
+  .source-pill {
+    background: white; border: 1px solid var(--border);
+    padding: 0.3rem 0.8rem; border-radius: 100px;
+    font-size: 0.78rem; font-weight: 500; color: var(--muted);
+  }
+
+  /* ── BENEFITS ── */
+  .benefits-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem; margin-top: 3rem;
+  }
+  .benefit-card {
+    background: white; border: 1px solid var(--border);
+    border-radius: 14px; padding: 1.75rem;
+    transition: all 0.25s;
+  }
+  .benefit-card:hover {
+    border-color: var(--teal); box-shadow: 0 0 0 4px var(--teal-glow);
+    transform: translateY(-3px);
+  }
+  .benefit-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.3rem; margin-bottom: 1rem;
+  }
+  .ic-teal { background: var(--teal-light); }
+  .ic-gold { background: var(--gold-light); }
+  .ic-purple { background: var(--purple-light); }
+  .ic-indigo { background: #E8EFF8; }
+  .ic-red { background: #FEE8E8; }
+  .ic-green { background: #E8F5E9; }
+  .benefit-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--text); }
+  .benefit-card p { font-size: 0.9rem; line-height: 1.65; color: var(--muted); }
+
+  /* ── EBOOK SHOWCASE ── */
+  .ebooks-bg { background: var(--deep); }
+  .ebooks-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem; margin-top: 3rem;
+  }
+  .ebook-showcase {
+    border-radius: 16px; padding: 2rem 1.75rem;
+    position: relative; overflow: hidden; transition: transform 0.25s;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .ebook-showcase:hover { transform: translateY(-4px); }
+  .eb-1 { background: linear-gradient(135deg, #0B3D3D, #0D1117); }
+  .eb-2 { background: linear-gradient(135deg, #3D2A00, #0D1117); }
+  .eb-3 { background: linear-gradient(135deg, #0A1A40, #0D1117); }
+  .eb-4 { background: linear-gradient(135deg, #1E1540, #0D1117); }
+  .ebook-showcase .badge {
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 0.3rem 0.75rem;
+    border-radius: 100px; display: inline-block; margin-bottom: 1.25rem;
+  }
+  .b-teal { background: rgba(14,124,123,0.25); color: #5CE8E3; border: 1px solid rgba(14,124,123,0.3); }
+  .b-gold { background: rgba(200,146,26,0.25); color: #F0C060; border: 1px solid rgba(200,146,26,0.3); }
+  .b-indigo { background: rgba(43,69,144,0.25); color: #90AAFF; border: 1px solid rgba(43,69,144,0.3); }
+  .b-purple { background: rgba(74,63,138,0.25); color: #C0B4FF; border: 1px solid rgba(74,63,138,0.3); }
+  .ebook-showcase h3 {
+    font-family: var(--ff-display); font-size: 1.15rem; font-weight: 700;
+    color: white; line-height: 1.3; margin-bottom: 0.75rem;
+  }
+  .ebook-showcase p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.6; margin-bottom: 1.25rem; }
+  .ebook-topics { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .topic {
+    font-size: 0.72rem; padding: 0.2rem 0.6rem;
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 100px; color: rgba(255,255,255,0.6);
+  }
+
+  /* ── HOW IT WORKS ── */
+  .how-bg { background: var(--off-white); }
+  .steps { display: flex; flex-direction: column; gap: 0; margin-top: 3rem; max-width: 680px; }
+  .step { display: flex; gap: 1.5rem; position: relative; padding-bottom: 2.5rem; }
+  .step:last-child { padding-bottom: 0; }
+  .step-line {
+    display: flex; flex-direction: column; align-items: center; flex-shrink: 0;
+  }
+  .step-dot {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--teal); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1rem; flex-shrink: 0;
+  }
+  .step-connector {
+    width: 2px; flex: 1; background: var(--border); margin: 6px 0;
+    min-height: 2rem;
+  }
+  .step:last-child .step-connector { display: none; }
+  .step-content { padding-top: 0.6rem; }
+  .step-content h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .step-content p { font-size: 0.9rem; color: var(--muted); line-height: 1.65; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem; margin-top: 3rem;
+  }
+  .testi-card {
+    background: white; border: 1px solid var(--border);
+    border-radius: 14px; padding: 1.75rem;
+  }
+  .stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 1rem; letter-spacing: 1px; }
+  .testi-text {
+    font-size: 0.95rem; line-height: 1.7; color: var(--text); margin-bottom: 1.25rem;
+    font-style: italic;
+  }
+  .testi-author { display: flex; align-items: center; gap: 0.75rem; }
+  .avatar {
+    width: 38px; height: 38px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 700; flex-shrink: 0;
+  }
+  .av-a { background: var(--teal-light); color: var(--teal); }
+  .av-b { background: var(--gold-light); color: var(--gold); }
+  .av-c { background: var(--purple-light); color: var(--purple); }
+  .av-d { background: #E8EFF8; color: var(--indigo); }
+  .av-e { background: #E8F5E9; color: #2E7D32; }
+  .author-name { font-size: 0.88rem; font-weight: 600; }
+  .author-role { font-size: 0.78rem; color: var(--muted); }
+
+  /* ── FAQ ── */
+  .faq-wrap { max-width: 680px; margin-top: 3rem; }
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+  }
+  .faq-q {
+    width: 100%; background: none; border: none;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.25rem 0; cursor: pointer; text-align: left;
+    font-family: var(--ff-body); font-size: 0.98rem; font-weight: 600; color: var(--text);
+    gap: 1rem;
+  }
+  .faq-arrow { font-size: 1.2rem; color: var(--muted); transition: transform 0.25s; flex-shrink: 0; }
+  .faq-a {
+    font-size: 0.9rem; color: var(--muted); line-height: 1.7;
+    max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.25s;
+    padding: 0;
+  }
+  .faq-item.open .faq-arrow { transform: rotate(45deg); }
+  .faq-item.open .faq-a { max-height: 400px; padding-bottom: 1.25rem; }
+
+  /* ── FINAL CTA ── */
+  .final-cta {
+    background: var(--deep);
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 80% at 50% 100%, rgba(14,124,123,0.25) 0%, transparent 70%);
+  }
+  .final-cta .container { position: relative; z-index: 1; max-width: 720px; }
+  .final-cta .section-title { color: white; }
+  .final-cta .section-sub { color: rgba(255,255,255,0.55); max-width: 100%; }
+
+  /* ── WA FORM ── */
+  .wa-form-wrap {
+    max-width: 480px; margin: 2.5rem auto 0;
+  }
+  .wa-input-group {
+    display: flex; align-items: stretch;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px; overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .wa-input-group:focus-within {
+    border-color: #25D366;
+    box-shadow: 0 0 0 3px rgba(37,211,102,0.15);
+  }
+  .wa-prefix {
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0 1rem; border-right: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.5); font-size: 0.9rem; font-weight: 500;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .wa-flag { font-size: 1.1rem; }
+  .wa-phone-input {
+    flex: 1; background: none; border: none; outline: none;
+    padding: 0.9rem 1rem; color: white;
+    font-family: var(--ff-body); font-size: 1rem;
+    letter-spacing: 0.04em;
+  }
+  .wa-phone-input::placeholder { color: rgba(255,255,255,0.3); }
+  .wa-phone-input::-webkit-inner-spin-button,
+  .wa-phone-input::-webkit-outer-spin-button { -webkit-appearance: none; }
+
+  .btn-wa {
+    width: 100%; margin-top: 0.85rem;
+    background: #25D366; color: white; border: none;
+    padding: 0.95rem 1.75rem; border-radius: 10px;
+    font-family: var(--ff-body); font-size: 1rem; font-weight: 700;
+    cursor: pointer; transition: all 0.2s;
+    display: flex; align-items: center; justify-content: center; gap: 0.6rem;
+  }
+  .btn-wa:hover { background: #1DAA54; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,0.3); }
+  .btn-wa svg { flex-shrink: 0; }
+
+  .wa-error {
+    font-size: 0.8rem; color: #FC8181; margin-top: 0.6rem;
+    text-align: left; display: none;
+  }
+  .wa-error.show { display: block; }
+
+  .guarantee {
+    font-size: 0.8rem; color: rgba(255,255,255,0.3); margin-top: 1rem;
+    display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+  }
+  .guarantee strong { color: rgba(255,255,255,0.55); }
+
+  /* ── KONFIRMASI OVERLAY ── */
+  .confirm-overlay {
+    position: fixed; inset: 0; z-index: 999;
+    background: rgba(0,0,0,0.7); backdrop-filter: blur(6px);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .confirm-overlay.show { opacity: 1; pointer-events: all; }
+  .confirm-box {
+    background: #111827; border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px; padding: 2.5rem 2rem;
+    max-width: 400px; width: 90%; text-align: center;
+    transform: translateY(20px) scale(0.97);
+    transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  .confirm-overlay.show .confirm-box { transform: translateY(0) scale(1); }
+
+  .confirm-icon-wrap {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: rgba(37,211,102,0.15); border: 2px solid #25D366;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1.5rem;
+    animation: none;
+  }
+  .confirm-overlay.show .confirm-icon-wrap { animation: popIn 0.5s 0.2s cubic-bezier(0.34,1.56,0.64,1) both; }
+  @keyframes popIn { from{transform:scale(0.5);opacity:0} to{transform:scale(1);opacity:1} }
+
+  .confirm-checkmark {
+    stroke-dasharray: 50; stroke-dashoffset: 50;
+    transition: stroke-dashoffset 0.6s 0.5s ease;
+  }
+  .confirm-overlay.show .confirm-checkmark { stroke-dashoffset: 0; }
+
+  .confirm-box h3 {
+    font-family: var(--ff-display); font-size: 1.4rem; font-weight: 700;
+    color: white; margin-bottom: 0.6rem;
+  }
+  .confirm-box p { font-size: 0.9rem; color: rgba(255,255,255,0.55); line-height: 1.6; margin-bottom: 0.4rem; }
+  .confirm-number {
+    font-size: 1rem; font-weight: 600; color: #25D366;
+    background: rgba(37,211,102,0.1); border: 1px solid rgba(37,211,102,0.2);
+    padding: 0.4rem 1rem; border-radius: 6px;
+    display: inline-block; margin: 0.75rem 0 1.25rem; letter-spacing: 0.05em;
+  }
+  .confirm-wa-btn {
+    display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+    width: 100%; background: #25D366; color: white; border: none;
+    padding: 0.85rem 1.5rem; border-radius: 10px;
+    font-family: var(--ff-body); font-size: 0.95rem; font-weight: 700;
+    cursor: pointer; transition: all 0.2s; text-decoration: none;
+    margin-bottom: 0.75rem;
+  }
+  .confirm-wa-btn:hover { background: #1DAA54; }
+  .confirm-close {
+    background: none; border: none; color: rgba(255,255,255,0.3);
+    font-size: 0.82rem; cursor: pointer; padding: 0.5rem;
+    font-family: var(--ff-body); transition: color 0.2s;
+  }
+  .confirm-close:hover { color: rgba(255,255,255,0.6); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #08080F; padding: 2rem clamp(1.5rem, 5vw, 4rem);
+    text-align: center;
+  }
+  footer p { font-size: 0.82rem; color: rgba(255,255,255,0.3); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .hero-visual { order: -1; }
+    .proof-divider { display: none; }
+    .proof-inner { gap: 2rem; }
+    nav .nav-brand { font-size: 1rem; }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .hero-badge { animation: fadeUp 0.6s ease forwards; }
+  .hero-title { animation: fadeUp 0.7s 0.1s ease forwards; opacity: 0; }
+  .hero-sub   { animation: fadeUp 0.7s 0.2s ease forwards; opacity: 0; }
+  .hero-cta-wrap { animation: fadeUp 0.7s 0.3s ease forwards; opacity: 0; }
+  .hero-stat-row { animation: fadeUp 0.7s 0.4s ease forwards; opacity: 0; }
+  .hero-visual .ebook-card:nth-child(1) { animation: fadeUp 0.6s 0.2s ease forwards; opacity: 0; }
+  .hero-visual .ebook-card:nth-child(2) { animation: fadeUp 0.6s 0.32s ease forwards; opacity: 0; }
+  .hero-visual .ebook-card:nth-child(3) { animation: fadeUp 0.6s 0.44s ease forwards; opacity: 0; }
+  .hero-visual .ebook-card:nth-child(4) { animation: fadeUp 0.6s 0.56s ease forwards; opacity: 0; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">Kode NLT</div>
+  <a href="#download" class="nav-cta">Dapat Ebook via WA →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="hero-badge">
+        <span></span> 4 Ebook Gratis — Seri NLT
+      </div>
+      <h1 class="hero-title">
+        Ilmu yang Mengubah<br>
+        <span class="accent">Cara Kamu Merasa,</span><br>
+        Bukan Hanya Berpikir
+      </h1>
+      <p class="hero-sub">
+        Dari represi emosi yang melemahkan sistem imun, hingga neurosains keheningan dan filosofi Zero is Hero — empat ebook berbasis riset ilmiah yang tidak akan kamu temukan di sekolah manapun.
+      </p>
+      <div class="hero-cta-wrap">
+        <a href="#download" class="btn-primary">
+          Download 4 Ebook Gratis ↓
+        </a>
+        <a href="#ebooks" class="btn-secondary">Lihat isinya →</a>
+      </div>
+      <div class="hero-stat-row">
+        <div class="hero-stat">
+          <strong>4</strong>
+          <span>Ebook Lengkap</span>
+        </div>
+        <div class="hero-stat">
+          <strong>100%</strong>
+          <span>Gratis</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Riset</strong>
+          <span>Berbasis Ilmiah</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="ebook-card">
+        <div class="ebook-num num-1">1</div>
+        <div class="ebook-info">
+          <strong>Semua Orang Menyukainya. Tubuhnya Tidak.</strong>
+          <span>Tipe C · Represi Emosi · Kesehatan</span>
+        </div>
+        <span class="ebook-free">Gratis</span>
+      </div>
+      <div class="ebook-card">
+        <div class="ebook-num num-2">2</div>
+        <div class="ebook-info">
+          <strong>Keinginanmu Tidak Akan Pernah Habis</strong>
+          <span>Hedonic Treadmill · Dopamin · NLT</span>
+        </div>
+        <span class="ebook-free">Gratis</span>
+      </div>
+      <div class="ebook-card">
+        <div class="ebook-num num-3">3</div>
+        <div class="ebook-info">
+          <strong>Solusi Terbaik Datang Saat Kamu Berhenti</strong>
+          <span>Default Mode Network · Inkubasi · Kreativitas</span>
+        </div>
+        <span class="ebook-free">Gratis</span>
+      </div>
+      <div class="ebook-card">
+        <div class="ebook-num num-4">4</div>
+        <div class="ebook-info">
+          <strong>Kamu Tidak Mengenal Dirimu Sendiri</strong>
+          <span>Kesadaran · Zero is Hero · Keheningan</span>
+        </div>
+        <span class="ebook-free">Gratis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="social-proof" style="padding: 2.5rem clamp(1.5rem, 5vw, 4rem);">
+  <div class="container">
+    <div class="proof-inner">
+      <div class="proof-stat">
+        <div class="num">4</div>
+        <div class="label">Ebook Seri Lengkap</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-stat">
+        <div class="num">340+</div>
+        <div class="label">Halaman Konten</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-stat">
+        <div class="num">15+</div>
+        <div class="label">Referensi Ilmiah</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-logos">
+        <span style="font-size:0.8rem; color:var(--muted);">Berdasarkan riset dari:</span>
+        <span class="source-pill">Johns Hopkins</span>
+        <span class="source-pill">Dr. Gabor Maté</span>
+        <span class="source-pill">USC Neuroscience</span>
+        <span class="source-pill">Psychosomatic Medicine</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section>
+  <div class="container">
+    <div class="section-label">Apa yang Kamu Dapatkan</div>
+    <h2 class="section-title">Bukan Motivasi. Ini Ilmu.</h2>
+    <p class="section-sub">Setiap bab didasarkan pada penelitian yang bisa diverifikasi — bukan sekadar inspirasi permukaan.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon ic-teal">🧬</div>
+        <h3>Mekanisme Biologis yang Nyata</h3>
+        <p>Pelajari bagaimana emosi yang ditekan mempengaruhi kortisol, Natural Killer Cells, dan sistem imun — dengan mekanisme yang diajarkan di sekolah kedokteran terkemuka.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon ic-gold">🧠</div>
+        <h3>Neurosains Default Mode Network</h3>
+        <p>Mengapa Einstein bermain biola saat mandek, Newton duduk di bawah pohon, dan Archimedes berendam — dan bagaimana kamu bisa mengakses kondisi otak yang sama.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon ic-purple">🪷</div>
+        <h3>Teknik NLT yang Praktis</h3>
+        <p>Empat langkah sederhana — Menyadari, Menerima, Memahami, Melepaskan — yang bisa dipraktikkan kapanpun, di manapun, tanpa kondisi khusus.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon ic-indigo">∞</div>
+        <h3>Filosofi Zero is Hero</h3>
+        <p>Mengapa 1÷0=∞ adalah kebenaran yang berlaku di kehidupan nyata, dan bagaimana kondisi "nol" adalah fondasi dari semua pencapaian tertinggi manusia.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon ic-red">❤️</div>
+        <h3>Memahami Pola Masa Kecil</h3>
+        <p>Bagaimana pola yang terbentuk sebelum kamu punya kapasitas untuk memilih masih berjalan hari ini — dan bagaimana mengenali serta mengubahnya.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon ic-green">🌱</div>
+        <h3>Panduan Praktik Harian</h3>
+        <p>Setiap ebook diakhiri dengan latihan konkret yang bisa dimulai hari ini — bukan teori yang mengambang tanpa arah tindakan yang jelas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EBOOK SHOWCASE -->
+<section class="ebooks-bg" id="ebooks">
+  <div class="container">
+    <div class="section-label" style="color: rgba(255,255,255,0.5);">Isi Seri Ebook</div>
+    <h2 class="section-title" style="color: white;">Empat Ebook, Satu Perjalanan</h2>
+    <p class="section-sub" style="color: rgba(255,255,255,0.5);">Dirancang untuk dibaca berurutan — tapi setiap ebook juga berdiri sendiri sebagai panduan yang lengkap.</p>
+    <div class="ebooks-grid">
+      <div class="ebook-showcase eb-1">
+        <span class="badge b-teal">Ebook #1</span>
+        <h3>Semua Orang Menyukainya. Tubuhnya Tidak.</h3>
+        <p>Panduan ilmiah memahami Kepribadian Tipe C, represi emosi, dan dampaknya pada kesehatan fisik yang terukur.</p>
+        <div class="ebook-topics">
+          <span class="topic">Tipe C</span>
+          <span class="topic">Natural Killer Cells</span>
+          <span class="topic">Johns Hopkins Study</span>
+          <span class="topic">Metode NLT</span>
+        </div>
+      </div>
+      <div class="ebook-showcase eb-2">
+        <span class="badge b-gold">Ebook #2</span>
+        <h3>Keinginanmu Tidak Akan Pernah Habis — Kecuali Kamu Tahu Ini</h3>
+        <p>Neurosains hedonic treadmill, cara kerja dopamin, dan teknik NLT untuk melepaskan keterikatan emosional.</p>
+        <div class="ebook-topics">
+          <span class="topic">Hedonic Treadmill</span>
+          <span class="topic">Dopamin</span>
+          <span class="topic">Tiga Racun</span>
+          <span class="topic">NLT Praktis</span>
+        </div>
+      </div>
+      <div class="ebook-showcase eb-3">
+        <span class="badge b-indigo">Ebook #3</span>
+        <h3>Solusi Terbaik Tidak Datang Saat Kamu Berpikir Keras</h3>
+        <p>Ilmu Default Mode Network, inkubasi kreatif, dan mengapa berhenti sejenak adalah strategi paling cerdas.</p>
+        <div class="ebook-topics">
+          <span class="topic">Default Mode Network</span>
+          <span class="topic">Inkubasi Kreatif</span>
+          <span class="topic">Dolce Far Niente</span>
+          <span class="topic">Bertrand Russell</span>
+        </div>
+      </div>
+      <div class="ebook-showcase eb-4">
+        <span class="badge b-purple">Ebook #4</span>
+        <h3>Kamu Tidak Mengenal Dirimu Sendiri</h3>
+        <p>Empat pemahaman terdalam dalam NLT: kesadaran murni, tanggung jawab 100%, kekuatan keheningan, dan Zero is Hero.</p>
+        <div class="ebook-topics">
+          <span class="topic">Unified Field</span>
+          <span class="topic">Zero is Hero</span>
+          <span class="topic">Kondisi Flow</span>
+          <span class="topic">Fisika Kuantum</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-bg">
+  <div class="container">
+    <div class="section-label">Cara Kerja</div>
+    <h2 class="section-title">Tiga Langkah Sederhana</h2>
+    <p class="section-sub">Tidak ada proses rumit. Tidak perlu pengalaman meditasi atau background psikologi.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-line">
+          <div class="step-dot">1</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Download Keempat Ebook Gratis</h3>
+          <p>Masukkan email dan langsung akses seluruh seri dalam format Word — siap dibaca di perangkat apapun. Tidak ada paywall, tidak ada kartu kredit.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line">
+          <div class="step-dot">2</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Mulai dari Ebook yang Paling Relevan</h3>
+          <p>Kamu bisa membaca berurutan untuk pengalaman penuh, atau langsung ke ebook yang topiknya paling terasa relevan dengan kondisi kamu saat ini. Setiap ebook berdiri sendiri.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-line">
+          <div class="step-dot">3</div>
+          <div class="step-connector"></div>
+        </div>
+        <div class="step-content">
+          <h3>Praktikkan — Bukan Hanya Pahami</h3>
+          <p>Setiap ebook diakhiri dengan latihan harian yang konkret. Perubahan terjadi bukan dari memahami, tapi dari mempraktikkan secara konsisten — meski dimulai dari langkah yang sangat kecil.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="container">
+    <div class="section-label">Apa Kata Pembaca</div>
+    <h2 class="section-title">Mereka Sudah Merasakannya</h2>
+    <p class="section-sub">Perubahan nyata dari orang-orang yang mengira mereka sudah tahu segalanya — sampai mereka membaca ini.</p>
+    <div class="testimonials-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Ebook pertama tentang Tipe C... aku nangis di tengah-tengahnya. Ini pertama kalinya ada penjelasan ilmiah untuk sesuatu yang sudah aku rasakan bertahun-tahun tapi tidak bisa aku namakan."</p>
+        <div class="testi-author">
+          <div class="avatar av-a">RS</div>
+          <div>
+            <div class="author-name">Ratna S.</div>
+            <div class="author-role">Konselor, Jakarta</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Ebook tentang Default Mode Network mengubah cara aku bekerja sepenuhnya. Sekarang aku sengaja mengambil jeda dan hasilnya justru jauh lebih baik dari sebelumnya."</p>
+        <div class="testi-author">
+          <div class="avatar av-b">BH</div>
+          <div>
+            <div class="author-name">Budi H.</div>
+            <div class="author-role">Product Manager, Surabaya</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Konsep 'Zero is Hero' di ebook keempat itu... sederhana banget secara matematika tapi dalam sekali implikasinya. Aku baca tiga kali dan setiap kali nemuin sesuatu yang baru."</p>
+        <div class="testi-author">
+          <div class="avatar av-c">AW</div>
+          <div>
+            <div class="author-name">Ayu W.</div>
+            <div class="author-role">Entrepreneur, Bali</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Akhirnya ada konten Indonesia yang membahas neurosains dengan serius dan berbasis data. Bukan cuma motivasi kosong. Langsung bagikan ke seluruh tim saya."</p>
+        <div class="testi-author">
+          <div class="avatar av-d">DK</div>
+          <div>
+            <div class="author-name">Danu K.</div>
+            <div class="author-role">CEO, Startup Teknologi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Saya dokter dan awalnya skeptis. Tapi referensi yang dipakai — Psychosomatic Medicine, Johns Hopkins, USC — ini legit semua. Direkomendasikan ke pasien saya yang punya pola Tipe C."</p>
+        <div class="testi-author">
+          <div class="avatar av-e">MR</div>
+          <div>
+            <div class="author-name">dr. Maya R.</div>
+            <div class="author-role">Dokter Umum, Bandung</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Teknik NLT empat langkah itu terlihat terlalu sederhana waktu pertama baca. Tapi setelah dua minggu konsisten, ada sesuatu yang benar-benar berbeda dalam cara saya merespons tekanan."</p>
+        <div class="testi-author">
+          <div class="avatar av-a">LN</div>
+          <div>
+            <div class="author-name">Lia N.</div>
+            <div class="author-role">Psikolog, Yogyakarta</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="how-bg">
+  <div class="container">
+    <div class="section-label">Pertanyaan Umum</div>
+    <h2 class="section-title">Jawaban untuk Keraguan Kamu</h2>
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Apakah ini benar-benar gratis? Tidak ada biaya tersembunyi?
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-a">Ya, sepenuhnya gratis. Tidak ada biaya tersembunyi, tidak ada upsell yang agresif, tidak ada langganan yang otomatis aktif. Keempat ebook dalam format Word langsung bisa kamu akses setelah masukkan email.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Apakah ebook ini cocok untuk orang yang tidak punya background psikologi?
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-a">Justru itulah tujuan utamanya. Setiap konsep ilmiah dijelaskan dengan analogi yang mudah dipahami — tanpa asumsi bahwa kamu sudah tahu istilah psikologi. Banyak pembaca mengatakan ini adalah pertama kalinya mereka benar-benar paham konsep-konsep seperti kortisol, default mode network, atau hedonic treadmill.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Berapa lama waktu yang dibutuhkan untuk membaca keempat ebook?
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-a">Masing-masing ebook dirancang untuk bisa dibaca dalam satu sesi — sekitar 60-90 menit per ebook, atau 4-6 jam untuk keseluruhan seri. Tapi banyak pembaca memilih untuk membaca lebih lambat dan mempraktikkan latihan di setiap bab sebelum lanjut ke bab berikutnya.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Haruskah dibaca berurutan dari ebook 1?
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-a">Tidak harus, tapi direkomendasikan. Setiap ebook dirancang untuk berdiri sendiri, tapi ada benang merah yang semakin kuat jika dibaca berurutan. Jika kamu tidak yakin mulai dari mana, mulai dari Ebook #1 tentang Kepribadian Tipe C — paling banyak pembaca menganggapnya sebagai yang paling "ah-ha" moment-nya.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Apakah ini ada kaitannya dengan agama atau kepercayaan tertentu?
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-a">Tidak. Seluruh seri ebook berbasis neurosains, psikologi, dan penelitian medis yang bisa diverifikasi. Meski Ebook #4 menyebut tradisi kontemplatif dari berbagai budaya sebagai referensi komparatif, pendekatan utamanya adalah ilmiah dan tidak membutuhkan keyakinan spiritual apapun untuk bisa dipraktikkan.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Apakah ini pengganti terapi atau konseling profesional?
+          <span class="faq-arrow">+</span>
+        </button>
+        <div class="faq-a">Tidak, dan kami tidak mengklaim demikian. Ebook ini adalah alat edukasi dan panduan praktik mandiri. Jika kamu sedang menghadapi kondisi kesehatan mental yang membutuhkan intervensi profesional, kami sangat mendorong untuk tetap berkonsultasi dengan psikolog atau psikiater yang berkualifikasi.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="download">
+  <div class="container">
+    <div class="section-label" style="color: rgba(255,255,255,0.5);">Download Sekarang via WhatsApp</div>
+    <h2 class="section-title">Mulai Perjalanan Mengenal Diri yang Sesungguhnya</h2>
+    <p class="section-sub">
+      Masukkan nomor WhatsApp-mu. Kami kirim langsung keempat ebook gratis — tanpa email, tanpa ribet.
+    </p>
+
+    <div class="wa-form-wrap">
+      <div class="wa-input-group" id="waInputGroup">
+        <div class="wa-prefix">
+          <span class="wa-flag">🇮🇩</span>
+          <span>+62</span>
+        </div>
+        <input
+          type="tel"
+          class="wa-phone-input"
+          id="waInput"
+          placeholder="812 3456 7890"
+          maxlength="14"
+          oninput="formatPhone(this)"
+        >
+      </div>
+      <div class="wa-error" id="waError">⚠ Masukkan nomor WhatsApp yang valid (minimal 9 digit)</div>
+      <button class="btn-wa" onclick="handleWaSubmit()">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.523 5.843L.057 23.882l6.201-1.626A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 01-5.007-1.374l-.36-.214-3.726.977.995-3.634-.235-.374A9.794 9.794 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+        </svg>
+        Kirim 4 Ebook via WhatsApp
+      </button>
+      <p class="guarantee">
+        🔒 <strong>Privasi terjaga.</strong> Nomor hanya digunakan untuk mengirim ebook. Tidak ada spam.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- KONFIRMASI OVERLAY -->
+<div class="confirm-overlay" id="confirmOverlay">
+  <div class="confirm-box">
+    <div class="confirm-icon-wrap">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <polyline class="confirm-checkmark" points="8,18 15,25 28,11"
+          stroke="#25D366" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3>Berhasil! 🎉</h3>
+    <p>Kami akan mengirim keempat ebook ke WhatsApp:</p>
+    <div class="confirm-number" id="confirmNumber">+62 812 3456 7890</div>
+    <p style="font-size:0.82rem; color:rgba(255,255,255,0.4); margin-bottom:1.25rem;">
+      Biasanya tiba dalam 1–2 menit. Pastikan WhatsApp-mu aktif.
+    </p>
+    <a class="confirm-wa-btn" id="confirmWaLink" href="#" target="_blank">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.11 1.523 5.843L.057 23.882l6.201-1.626A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.794 9.794 0 01-5.007-1.374l-.36-.214-3.726.977.995-3.634-.235-.374A9.794 9.794 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182c5.43 0 9.818 4.388 9.818 9.818 0 5.43-4.388 9.818-9.818 9.818z"/>
+      </svg>
+      Buka WhatsApp Sekarang
+    </a>
+    <button class="confirm-close" onclick="closeConfirm()">Tutup</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Kode NLT · Konten berbasis riset ilmiah untuk kesehatan emosional dan pengembangan kesadaran</p>
+</footer>
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+function formatPhone(input) {
+  let val = input.value.replace(/\D/g, '');
+  if (val.startsWith('0')) val = val.slice(1);
+  if (val.startsWith('62')) val = val.slice(2);
+  let formatted = '';
+  for (let i = 0; i < val.length; i++) {
+    if (i === 3 || i === 7) formatted += ' ';
+    formatted += val[i];
+  }
+  input.value = formatted;
+}
+
+function handleWaSubmit() {
+  const raw = document.getElementById('waInput').value.replace(/\D/g, '');
+  const err = document.getElementById('waError');
+  const group = document.getElementById('waInputGroup');
+
+  if (raw.length < 9) {
+    err.classList.add('show');
+    group.style.borderColor = '#FC8181';
+    group.style.boxShadow = '0 0 0 3px rgba(252,129,129,0.15)';
+    return;
+  }
+  err.classList.remove('show');
+  group.style.borderColor = '#25D366';
+  group.style.boxShadow = '0 0 0 3px rgba(37,211,102,0.2)';
+
+  const fullNumber = '62' + raw;
+  const displayNumber = '+62 ' + document.getElementById('waInput').value.trim();
+
+  document.getElementById('confirmNumber').textContent = displayNumber;
+
+  const msg = encodeURIComponent(
+    'Halo! Saya ingin mendapatkan 4 Ebook Gratis Seri NLT:\n\n' +
+    '1️⃣ Semua Orang Menyukainya. Tubuhnya Tidak.\n' +
+    '2️⃣ Keinginanmu Tidak Akan Pernah Habis\n' +
+    '3️⃣ Solusi Terbaik Datang Saat Kamu Berhenti\n' +
+    '4️⃣ Kamu Tidak Mengenal Dirimu Sendiri\n\n' +
+    'Mohon kirimkan ebook-nya. Terima kasih! 🙏'
+  );
+
+  const waNumber = 'NOMOR_WA_ADMIN'; // ← ganti dengan nomor WA admin
+  document.getElementById('confirmWaLink').href =
+    `https://wa.me/${waNumber}?text=${msg}`;
+
+  const overlay = document.getElementById('confirmOverlay');
+  overlay.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeConfirm() {
+  const overlay = document.getElementById('confirmOverlay');
+  overlay.classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('confirmOverlay').addEventListener('click', function(e) {
+  if (e.target === this) closeConfirm();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeConfirm();
+});
+</script>
+
+</body>
+</html>
